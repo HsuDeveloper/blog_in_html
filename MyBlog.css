@@ -1,0 +1,36 @@
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 35px;
+}
+
+.left_nav {   
+    background-color:gray;
+    float: left;
+    width: 20%;
+  }
+
+  .left_nav li{
+      list-style: none;
+  }
+
+  .left_nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 70%;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .left_nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .main{
+    float: right;
+    width: 75%;
+    background-color: #ddd;
+    padding-left: 20px;
+  }
