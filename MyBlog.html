@@ -5,14 +5,45 @@
         <link rel="stylesheet" type="text/css" href="MyBlog.css">
         <script type="text/javascript" src="MyBlog.js"></script>
     </head>
-    <bodt>
-        <div class="header">header</div>
-        <div class="left_nav">
+    <body>
+        <header><h2>header</h2></header>
+        <nav class="fill">
             <ul>
-                <li><a href ='#'>WaterManager_app</a></li>
-                <li><a href ='#'>More....</a></li>
+              <li><a href="#">Nav1</a></li>
+              <li><a href="#">Nav2</a></li>
+              <li><a href="#">Nav3</a></li>
+              <li><a href="#">Nav4</a></li>
+              <li><a href="#">Nav5</a></li>
+            </ul>
+        </nav>
+        
+      <div class="body">
+        <div class="left_body">
+          <div class="profile">
+            <img src="hsu.jpg" alt="profile picture">
+            <p>Hsu_Developer</p>
+          </div>
+          <div class="login">
+            <input type="text" id="login_id" placeholder="ID">
+            <input type="text" id="login_id" placeholder="PW">
+            <input type="button" id="login_btn" value="login">
+          </div>
+          <div class="menu">
+            <input type="text" id="search_text" onkeyup="search_menu()" placeholder="Search..">
+            <ul id="menu_ul">
+              <li><a href="#">menu1</a></li>
+              <li><a href="#">menu2</a></li>
+              <li><a href="#">menu3</a></li>
+              <li><a href="#">menu4</a></li>
+              <li><a href="#">menu5</a></li>
             </ul>
         </div>
-        <div class="main">main</div>
-    </bodt>
+        </div>
+        <div class="right_body">main</div>
+      </div>
+
+      <footer>
+        footer
+      </footer>
+    </body>
 </html>
