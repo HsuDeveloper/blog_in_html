@@ -7,87 +7,17 @@ body{
 }
 
 header {
-  background-color: black;
+  border-style:ridge;
   color:white;
   width:100%;
   padding:15px;
   text-align: center;
   top:0;
   left:0;
-  z-index: 1;
-}
-
-nav {
-  width: 80%;
-  margin: 0 auto;
-  margin-top:20px;
   margin-bottom:20px;
-  background: #fff;
-  box-shadow: 0px 5px 0px #dedede;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #aaa;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin: 0 10px;
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #555;
-}
-
-nav.fill ul li a {
-  position: relative;
-}
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
-
-nav.fill ul li a {
-  transition: all 2s;
-}
-
-nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color:black;
   z-index: 1;
 }
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
+
 
 .body{
   display:flex;
@@ -97,30 +27,29 @@ nav.fill ul li a:hover:after {
 .left_body{
   flex:15%;
   margin-right: 5%;
+  margin-left:0%;
 }
 
 .profile{
   border-radius: 20%;
-  background:#ddd;
+  border-style: solid;
   width:100%;
   padding:10px;
+  color:white;
   margin-bottom: 20px;
 }
 .profile img{
-  width:80%;
+  border-style: solid;
+  color:white;
+  width:75%;
   height: 140px;
   border-radius: 100%;
 }
 
-.login{
-  background:#ddd;
-  width:100%;
-  padding:10px;
-}
-
 .menu{
-  background:#ddd;
   width:100%;
+  border-style: solid;
+  color:white;
   margin-top: 20px;
 }
 #search_text {
@@ -137,23 +66,28 @@ nav.fill ul li a:hover:after {
 #menu_ul li a {
   padding: 12px;
   text-decoration: none;
-  color: black;
+  color: white;
   display: block
 }
 
 .left_body li a:hover {
-  background-color: #eee;
+  background-color: black;
 }
 .right_body{
   flex:80%;
-  margin-right: 5%;
-  background-color: #ddd;
+  background-color: white;
   padding-left: 20px;
+  border-style: solid;
+  border-color:tomato;
 }
 
 footer {
-  background-color: #F1F1F1;
+  border-style: outset;
+  color:white;
   text-align: center;
-  padding:1px;
+  position:absolute;
+  width:100%;
+  bottom : 0;
+  padding:10px;
   margin-top: 20px;
 }
